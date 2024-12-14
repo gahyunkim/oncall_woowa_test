@@ -8,13 +8,16 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.woowacourse-projects:mission-utils:1.2.0")
+    implementation("com.github.woowacourse-projects:mission-utils:1.1.0")
 }
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(19))
     }
+
+    sourceCompatibility = JavaVersion.VERSION_19
+    targetCompatibility = JavaVersion.VERSION_19
 }
 
 tasks {
